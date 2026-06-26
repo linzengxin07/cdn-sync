@@ -36,27 +36,6 @@ app.listen(port, () => {
 });
 ```
 
-### 建议：使用环境变量保存配置
-
-不要把应用 ID 或密钥硬编码在源码里。建议把该值放到环境变量 `CDN_SYNC_APP`，并在代码中读取：
-
-```js
-assetSync.start(process.env.CDN_SYNC_APP || 'appupdate-knock-7c4a9e2f');
-```
-
-并在运行前导出：
-
-```bash
-export CDN_SYNC_APP=appupdate-knock-7c4a9e2f
-node app.js
-```
-
-或一行命令：
-
-```bash
-CDN_SYNC_APP=appupdate-knock-7c4a9e2f node app.js
-```
-
 ## 启动/运行
 
 可以在 package.json 中添加一个 start 脚本：
