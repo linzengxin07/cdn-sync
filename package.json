@@ -11,7 +11,7 @@
   "author": "linzengxin07",
   "license": "MIT",
   "dependencies": {
-    "@appupdate/cdn-sync": "^1.0.0",
+    "@appupdate/cdn-sync": "1.0.3",
     "express": "^4.18.0"
   },
   "devDependencies": {
